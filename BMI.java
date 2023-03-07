@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class BMI {
-    public static boolean isNumber(String z) {
+    public static boolean isNumber(String z) {         //makes sure inputted value for height and weight is a number
         for (int i = 0; i < z.length(); i++) {
             if (!Character.isDigit(z.charAt(i))) {
                 return false;
@@ -9,8 +9,8 @@ public class BMI {
         return true;
     }
 
-    public static double BMI(double height, double weight) {
-        return weight / (height * height) * 703;
+    public static double BMI(double height, double weight) {          
+        return weight / (height * height) * 703;                  //Formula for BMI is lbs/inches^2 -> multiply by 703 to get kgs/m^2
     }
 
     public static void main(String[] args) {
