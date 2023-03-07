@@ -14,9 +14,6 @@ public class BMI {
     }
 
     public static void main(String[] args) {
-        System.out.println("Name: Usman Ahmed");
-        System.out.println("PID#: 002-48-7071");
-
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter your name: ");
         String name = in.next();
